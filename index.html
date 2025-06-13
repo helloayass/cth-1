@@ -147,16 +147,22 @@
     <button class="button" onclick="goToPage(3)">open it ‹𝟹</button>
   </div>
 
-<div class="page" id="page3" style="font-family: 'Dancing Script', cursive;">
+  <div class="page" id="page3" style="font-family: 'Dancing Script', cursive;">
     <h2>My Precious, @kadoin <𝟑 .ᐟ </h2>
     <div class="letter" id="letterText"></div>
-</div>
+    <button class="button" onclick="goToPage(4)">click this for more magic ✿</button>
+  </div>
+
+  <!-- Halaman 4 (Bunga) -->
+  <div class="page" id="page4">
+    <iframe src="flower.html" style="width:100vw;height:100vh;border:none;"></iframe>
+  </div>
 
   <audio id="bg-music" src="Party.mp3" autoplay loop muted></audio>
 
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <script>
-    const fullLetter = `Happy birthday, Kadoin.digital! 💙
+    const fullLetter = `Happy birthday, Jihan! 💙
 
 Thanks for always being such a bright light and a kind soul. You make everything better just by being you.
 
@@ -165,12 +171,12 @@ Hope your day is full of laughter, good vibes, and little moments that make you 
 Can’t wait to see all the amazing things this year has in store for you!
 
 Big hugs,
-Mimin kadoin >⩊<`;
+Dyas >⩊<`;
 
     function goToPage(pageNum) {
       const pages = document.querySelectorAll('.page');
       pages.forEach(p => p.classList.remove('active'));
-      const next = document.getElementById(`page${pageNum}`);
+      const next = document.getElementById(\`page\${pageNum}\`);
       next.classList.add('active');
 
       if (pageNum === 3) {
@@ -212,4 +218,4 @@ Mimin kadoin >⩊<`;
     }
   </script>
 </body>
-</html>
+    </html>
